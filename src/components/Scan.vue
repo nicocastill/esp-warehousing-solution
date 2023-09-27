@@ -26,6 +26,7 @@ const scanReceiverElement = ref({
 const videoElement = ref(null);
 
 
+
 const isCapturing = ref(false);
 
 const isStopped = ref(false);
