@@ -1,0 +1,27 @@
+{
+    "receive": {
+        "id": 1,
+        "featureTitle": "Receive",
+        "routepath": "/receive"
+    },
+    "receivingexceptions": {
+        "id": 2,
+        "featureTitle": "Receiving Exceptions",
+        "routepath": "/receiveexception"
+    },
+    "transfer": {
+        "id": 3,
+        "featureTitle": "Transfer",
+        "routepath": "/transfer"
+    },
+    "truckloadscan": {
+        "id": 4,
+        "featureTitle": "Truckload Scan",
+        "routepath": "/truckloadscan"
+    },
+    "physicalcount": {
+        "id": 5,
+        "featureTitle": "Physical Count",
+        "routepath": "/physicalcount"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "fieldList": [{
+
+            "fieldId": "custrecord_esp_mwm_tl_dealer_company",
+            "vueFieldLabel": "Company Code",
+            "vueType": "select",
+            "vueFieldType": "selectedOption",
+            "vueModel": "selectedValue",
+            "listId": "customrecord_cseg_stc_company",
+            "isRequired": true
+        },
+        {
+
+            "fieldId": "custrecord_esp_mwm_tl_ticket_num",
+            "vueType": "text",
+            "vueFieldLabel": "Ticket Number",
+            "vueFieldType": "text",
+            "vueModel": "inputValue",
+            "isDisabled": true
+        },
+        {
+
+            "fieldId": "custrecord_esp_mwm_tl_load_grp",
+            "vueFieldLabel": "Load Group",
+            "vueType": "select",
+            "vueFieldType": "selectedOption",
+            "vueModel": "selectedValue",
+            "listId": "location",
+            "isRequired": true
+        },
+        {
+
+            "fieldId": "custrecord_esp_mwm_tl_tran_loc",
+            "vueFieldLabel": "Transfer to Location",
+            "vueType": "select",
+            "vueFieldType": "selectedOption",
+            "vueModel": "selectedValue",
+            "listId": "location",
+            "isRequired": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "fieldList": [{
+
+            "fieldId": "custrecord_esp_mwm_re_dealer_company",
+            "vueFieldLabel": "Company Code",
+            "vueType": "select",
+            "vueFieldType": "selectedOption",
+            "vueModel": "selectedValue",
+            "listId": "customrecord_cseg_stc_company",
+            "isRequired": true
+        },
+        {
+
+            "fieldId": "custrecord_esp_mwm_re_rec_ware_loc",
+            "vueFieldLabel": "Warehouse",
+            "vueType": "select",
+            "vueFieldType": "selectedOption",
+            "vueModel": "selectedValue",
+            "listId": "location",
+            "isRequired": true
+        },
+        {
+
+
+            "fieldId": "custrecord_esp_mwm_re_currload",
+            "vueType": "text",
+            "vueFieldLabel": "Current Load",
+            "vueFieldType": "text",
+            "vueModel": "readOnlyText",
+            "isDisabled": true
+        }
+    ]
+}
