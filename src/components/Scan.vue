@@ -144,14 +144,23 @@ const retrieveAsnFromBarcode = async (barcode) => {
       .then((returnData) => {
         if (returnData.isSuccessful === true) {
           const { asnShipNumber } = returnData.getAllAsnData;
-          Swal.fire(`ASN Number Exists: ${asnShipNumber}`);
+          Swal.fire(`ASN Number Exists: ${asnShipNumber}`)
+              .then((result) => {
+                console.log("ASN ok", JSON.stringify(result))
+                isPaused.value = false;
+                capture();
+              });
           asnNumber.value = asnShipNumber;
           notifyParentAsnChange();
           disableRecExcBtn.value = true;
           console.log(JSON.stringify(data.value));
           return asnShipNumber;
         }
-        Swal.fire('ASN Number Does not exist');
+        Swal.fire('ASN Number Does not exist').then((result) => {
+          console.log("ASN NOT ok", JSON.stringify(result))
+          isPaused.value = false;
+          capture();
+        });
         disableRecExcBtn.value = false; // Note the .value here
         return '';
       })
